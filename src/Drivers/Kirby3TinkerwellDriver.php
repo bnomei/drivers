@@ -64,6 +64,12 @@ class Kirby3TinkerwellDriver extends TinkerwellDriver
             	'echo', 
             	'// echo'
             );
+            
+            // patch k3 composer include vendor autoload
+            $this->patchBootstrapFile($this->cli, 
+            	"include '../vendor/autoload.php';", 
+            	"include __DIR__ . '/../vendor/autoload.php';"
+            );
 
             // patch k3 composer vendor require: https://github.com/getkirby/starterkit/blob/master/index.php#L3
             $this->patchBootstrapFile($this->cli, 
