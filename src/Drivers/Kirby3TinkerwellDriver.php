@@ -124,8 +124,8 @@ class Kirby3TinkerwellDriver extends TinkerwellDriver
     public function contextMenu()
     {
         $menu = [
-            Label::create('Detected PHP v.' . phpversion()),
-            Label::create('Detected Kirby v.' . Kirby::version()),
+            Label::create('Detected PHP v' . phpversion()),
+            Label::create('Detected Kirby v' . Kirby::version()),
 
             OpenURL::create('Kirby Guide', 'https://getkirby.com/docs/guide'),
             OpenURL::create('Kirby Cookbook', 'https://getkirby.com/docs/cookbook'),
