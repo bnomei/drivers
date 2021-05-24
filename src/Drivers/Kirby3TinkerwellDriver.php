@@ -18,7 +18,7 @@ use Tinkerwell\ContextMenu\OpenURL;
 use Tinkerwell\ContextMenu\SetCode;
 use Tinkerwell\ContextMenu\Submenu;
 
-class KirbyTinkerwellDriver extends TinkerwellDriver
+class Kirby3TinkerwellDriver extends TinkerwellDriver
 {
     private $cli;
     private $bootstrap;
